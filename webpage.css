@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    background-color: white;
+    
+}
+header
+{
+    background-color: #808000;
+    color: white;
+    padding: 0 20px;
+    text-align: left;
+}
+nav a
+{
+    color: #F0FFF0;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 10px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+}
+nav a:hover
+{
+    color: white;
+    background-color: #5c5c05;
+}
+nav a.active
+{
+    color: antiquewhite;
+}

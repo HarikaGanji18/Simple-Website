@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Nature's Basket</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #808000;
+            text-align: left; 
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #F0FFF0;
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 10px 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #5c5c05;
+            border-radius: 5px;
+        }
+
+        /* Cart Section */
+        .cart {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: brown;
+            margin-bottom: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h2
+        {
+            color: black;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-details {
+            flex-grow: 1;
+        }
+
+        .item-details h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .item-details p {
+            margin: 0.25rem 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: darkslategray;
+        }
+
+        .item-price {
+            align-self: center;
+            font-size: 1.2rem;
+            color: black;
+            
+        }
+
+        .remove-button {
+            background-color: red;
+            color: white;
+            padding: 0.1rem 0.5rem; 
+            border: none;
+            border-radius: 3px;  
+            cursor: pointer;
+            font-size: 0.8rem;  
+        }
+
+        .remove-button:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Checkout Section */
+        .checkout {
+            margin-top: 2rem;
+            text-align: right;
+        }
+
+        .checkout-button {
+            background-color: green;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkout-button:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #808000;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="./webpage.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./orders.html">My Orders</a>
+            <a href="./mycart.html">My Cart</a>
+            <a href="./support.html">Support</a>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h1>My Cart</h1>
+
+        <div class="cart-item">
+            <div class="item-details">
+                <h2>Apples</h2>
+                <p>Quantity: 3 lbs</p>
+                <p>Price: $12.00</p>
+            </div>
+            <div class="item-price">$12.00</div>
+            <button class="remove-button">Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <div class="item-details">
+                <h2>Bananas</h2>
+                <p>Quantity: 2 lbs</p>
+                <p>Price: $8.00</p>
+            </div>
+            <div class="item-price">$8.00</div>
+            <button class="remove-button">Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <div class="item-details">
+                <h2>Spinach</h2>
+                <p>Quantity: 1 lb</p>
+                <p>Price: $6.00</p>
+            </div>
+            <div class="item-price">$6.00</div>
+            <button class="remove-button">Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <div class="item-details">
+                <h2>Carrots</h2>
+                <p>Quantity: 2 lbs</p>
+                <p>Price: $10.00</p>
+            </div>
+            <div class="item-price">$10.00</div>
+            <button class="remove-button">Remove</button>
+        </div>
+
+        <!-- Checkout Section -->
+        <div class="checkout">
+            <h2>Total: $36.00</h2>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nature's Basket | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

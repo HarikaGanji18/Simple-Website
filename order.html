@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Nature's Basket</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #808000;
+            padding: 1rem;
+            text-align: left; 
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #F0FFF0;
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 10px 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #5c5c05;
+            border-radius: 5px;
+        }
+
+        /* Orders Section */
+        .orders {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: brown;
+            margin-bottom: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+        .order-summary, .order-details {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .order-summary h2, .order-details h2 {
+            margin-bottom: 1rem;
+        }
+
+        .order-summary p, .order-details p {
+            margin-bottom: 0.5rem;
+        }
+
+        .details-button, .cancel-button, .reorder-button, .support-button {
+            background-color: green;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .details-button:hover, .cancel-button:hover, .reorder-button:hover, .support-button:hover {
+            background-color: green;
+        }
+
+        .cancel-button {
+            background-color: #f44336;
+        }
+
+        .cancel-button:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Order Status Colors */
+        .delivered {
+            color: #4CAF50;
+        }
+
+        .processing {
+            color: #FFA500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #808000;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="./webpage.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./order.html">My Orders</a>
+            <a href="./mycart.html">My Cart</a>
+            <a href="./support.html">Support</a>
+        </nav>
+    </header>
+
+    <!-- Orders Section -->
+    <section class="orders">
+        <h1>My Orders</h1>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h2>Order #123456 - Delivered</h2>
+            <p>Date: 2024-09-15</p>
+            <p>Total: $45.00</p>
+            <p>Status: <span class="delivered">Delivered</span></p>
+            <button class="details-button">View Details</button>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order #123457 - Processing</h2>
+            <p>Date: 2024-09-20</p>
+            <p>Total: $32.50</p>
+            <p>Status: <span class="processing">Processing</span></p>
+            <button class="details-button">View Details</button>
+            <button class="cancel-button">Cancel Order</button>
+        </div>
+
+        <!-- Order Details Example (could be hidden until a "View Details" button is clicked) -->
+        <div class="order-details">
+            <h2>Order Details - #123456</h2>
+            <ul>
+                <li>Product: Apples (3 lbs) - $12.00</li>
+                <li>Product: Bananas (2 lbs) - $8.00</li>
+                <li>Product: Spinach (1 lb) - $6.00</li>
+                <li>Product: Carrots (2 lbs) - $10.00</li>
+            </ul>
+            <p>Shipping Address: 123 Main St, Springfield</p>
+            <p>Payment Method: Credit Card (**** 1234)</p>
+            <p>Estimated Delivery: 2024-09-18</p>
+            <button class="reorder-button">Reorder</button>
+            <button class="support-button">Contact Support</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nature's Basket | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
