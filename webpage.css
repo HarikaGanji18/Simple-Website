@@ -14,7 +14,7 @@ body {
   
   .resource-card {
     background-color: #1c1c1c; 
-    border: 2px solid #ff8c00; 
+    border: 2px solid orangered; 
     border-radius: 15px;
     padding: 20px;
     max-width: 400px;
@@ -43,7 +43,7 @@ body {
   
   ul li a {
     text-decoration: none;
-    color: #ff8c00; 
+    color: orangered; 
     font-weight: bold;
   }
   
@@ -56,7 +56,7 @@ body {
   }
   
   .button {
-    background-color: #ff8c00; 
+    background-color: orangered; 
     color: #121212; 
     border: none;
     padding: 10px 20px;
@@ -90,7 +90,7 @@ body {
   }
   
   .book-details a {
-    color: #ff8c00;
+    color: orangered;
     text-decoration: none;
   }
   
